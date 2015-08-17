@@ -1,1 +1,3 @@
-p {font:"Georgia"}
+p {font-family:"Georgia"
+	font-height:20px
+	}
