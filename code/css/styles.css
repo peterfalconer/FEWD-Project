@@ -1,0 +1,52 @@
+
+html {
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+header {
+    color: white;
+    background-color: black;
+    height: 50px;
+}
+
+.horizontal-list-hdr {
+    color: white;
+    background-color: #002030;
+    display: inline-block;
+    width: 19%;
+    list-style: none;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.horizontal-nav {
+    color: blue;
+    display: inline-block;
+    width: 25%;
+    list-style: none;
+/*    margin-top: 10px;
+    margin-bottom: 10px;*/
+}
+
+.horizontal-list {
+    color: blue;
+    display: inline-block;
+    width: 19%;
+    list-style: none;
+/*    margin-top: 10px;
+    margin-bottom: 10px;*/
+}
+
+.event-detail {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+footer {
+
+}
