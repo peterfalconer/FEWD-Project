@@ -1,0 +1,36 @@
+Event data
+	Name
+	Description
+		and short excerpt for responsive
+	Date/time
+	Location - street address/suburb/state/pcode/lat/long
+	Capacity
+	Current registrant numbers
+	Cost
+	Feature image
+	Thumbnail image
+	Map
+	Registration fields
+		Name
+		email
+		number of guests
+		address (opt)
+		homephone (opt)
+		mobile (opt)
+	In-house organiser name
+	Supporter organiser name
+	Contact email
+	In-house event flag
+	Admin password
+	Search terms
+	Waitlisted
+Admin
+	Id
+	Name
+	Email
+	mobile
+	homephone
+	workphone
+	address
+	
+

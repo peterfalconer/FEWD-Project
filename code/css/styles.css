@@ -48,5 +48,13 @@ header {
 }
 
 footer {
+    height: 1rem;
+    background-color: #00F;
+    color: #fff;
+    font-size: .5rem;
+    position: relative;
+}
 
+footer p {
+    position: center;
 }
