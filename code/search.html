@@ -4,18 +4,27 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,800' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css\normalize.css">
         <link rel="stylesheet" type="text/css" href="css\styles.css">
-        <title>Australian Conservatiion Foundation Events</title>
+        <title>Australian Conservation Foundation Events</title>
     </head>
     <body>
         <header>
-            <p>Australian Conservation Foundation</p>
-            <div>Search for Events</div>
-        </header>
-        <form>
-
+            <h1>Australian Conservation Foundation</h1>
+        </header>  
+        <h2>Search for Events</h2>
+        <form action="index.html">
+            <legend>Search by ...</legend>
+            <ul>
+                <li><label class='eventInfo' for='eventName'>Name</label><input type='text' name='eventName'></li>
+                <li><label class='eventInfo' for='eventDate'>Date</label><input type='date' name='eventDate'></li>
+                <li><label class='eventInfo' for='eventLocation'>Location</label><input type='text' name='eventLocation'></li>
+                <li><label class='eventInfo' for='eventOrganiser'>Organiser</label><input type='text' name='eventOrganiser'></li>
+                <input type='submit'>
+            </ul>
         </form>
         <footer>
             <button><a href="index.html">Back</a></button>
         </footer> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+        <script type="text/javascript" src="js/search.js"></script>
     </body>
 </html>

@@ -5,13 +5,67 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 12px;
 }
 
 header {
     color: white;
     background-color: black;
-    height: 50px;
+    height: 400px;
+    background: url(../images/ACF_hdr.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+legend {
+    font-size: 1.25rem
+    /*text-align: center;*/
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 150px;
+    font-size: 1.5rem;
+}
+
+h2 {
+    text-align: center;
+}
+@media screen and (max-width: 500px) {
+    header h1 {
+        font-size: 1.25rem;
+    }
+    legend {
+        font-size: 1rem
+    }
+}
+
+.create {
+    display: block;
+}
+
+.edit {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+
+ul {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*index page specific*/
+.horizontal-nav {
+    color: blue;
+    display: inline-block;
+    width: 25%;
+    list-style: none;
+
 }
 
 .horizontal-list-hdr {
@@ -20,17 +74,6 @@ header {
     display: inline-block;
     width: 19%;
     list-style: none;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-.horizontal-nav {
-    color: blue;
-    display: inline-block;
-    width: 25%;
-    list-style: none;
-/*    margin-top: 10px;
-    margin-bottom: 10px;*/
 }
 
 .horizontal-list {
@@ -38,13 +81,24 @@ header {
     display: inline-block;
     width: 19%;
     list-style: none;
-/*    margin-top: 10px;
-    margin-bottom: 10px;*/
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-bottom: 2px;
 }
 
 .event-detail {
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+input {
+    border-radius: 4px;
+    width: 40%;
+}
+
+.styleform input[type="submit"] {
+    margin-left: 20%;
+    margin-top: 3px;
 }
 
 footer {
@@ -58,3 +112,40 @@ footer {
 footer p {
     position: center;
 }
+
+.eventInfo {
+    color:#000;
+    width: 15%;
+    padding-right: 4%;
+    list-style-type: none;
+}
+
+.listInfo {
+    list-style-type: none;
+}
+
+.extraInfo {
+    display: none;
+}
+
+@media screen and (min-width: 550px) {
+    .eventInfo {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 685px) {
+    .eventInfo {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1089px) {
+    styleform input {
+        margin-left: 2rem;
+    }
+    .eventInfo {
+        font-size: 2rem;
+    }
+}
+
