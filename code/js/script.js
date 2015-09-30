@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     $(".showEvent").click(jumpToShowEvent);
 
-    $(".extra").click(showExtraInfo);
+    $(".extraInfo").click(showExtraInfo);
     
     function showEventList(eventList) {
         var listItem = "";
@@ -17,6 +17,7 @@ $(document).ready(function() {
                     "<li class=\"horizontal-list\"><a class=\"showEvent\" href=\"create.html\">" + eventList[i][1] + "</a></li>" +
                     "<li class=\"horizontal-list\">" + eventList[i][2] + "</li>" +
                     "<li class=\"horizontal-list\">" + eventList[i][3] + "</li>" +
+                    "<li class=\"horizontal-list\" id=\"more" + i + "\">more</li>" +
                 "</ul><div class= \"extraInfo\"><div id=\"" + i + "\">" + eventList[i][4] + "</div></div>"
             $(".event-list").html(listItem);
         }
