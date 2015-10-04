@@ -11,16 +11,35 @@ $(document).ready(function() {
     
     function showEventList(eventList) {
         var listItem = "";
-        for (i=0;i<eventList.length;i++) {
-            listItem = listItem + "<ul class=\"event-detail\">" +
-                    "<li class=\"horizontal-list\">" + eventList[i][0] + "</li>" +
-                    "<li class=\"horizontal-list\"><a class=\"showEvent\" href=\"create.html\">" + eventList[i][1] + "</a></li>" +
-                    "<li class=\"horizontal-list\">" + eventList[i][2] + "</li>" +
-                    "<li class=\"horizontal-list\">" + eventList[i][3] + "</li>" +
-                    "<li class=\"horizontal-list\" id=\"more" + i + "\">more</li>" +
-                "</ul><div class= \"extraInfo\"><div id=\"" + i + "\">" + eventList[i][4] + "</div></div>"
-            $(".event-list").html(listItem);
-        }
+        var i = 0;
+        if (localStorage) {
+            var data = localStorage.getItem(i.toString());
+            while (data !== null) {
+                var w = data.split("|");
+                listItem = listItem + "<ul class=\"event-detail\">" +
+                        "<li class=\"horizontal-list\">" + w[0] + "</li>" +
+                        "<li class=\"horizontal-list\"><a class=\"showEvent\" href=\"create.html\">" + w[1] + "</a></li>" +
+                        "<li class=\"horizontal-list\">" + w[2] + "</li>" +
+                        "<li class=\"horizontal-list\">" + w[3] + "</li>" +
+                        "<li class=\"horizontal-list\"><button id=\"more" + i + "\">more</button></li>" +
+                        "</ul><div class= \"extraInfo\"><div id=\"extraInfo" + i + "\">" + w[4] + "</div></div>"
+
+                    $(".event-list").html(listItem);   
+                    console.log("Adding more" + i  + " click function");             
+                    $("#more" + i).click(function(e){
+                        console.log("more");
+                    });
+                i++;
+                data = localStorage.getItem(i.toString());           
+            }; 
+            // for (var j = 0; j < i; j++) {
+            //     console.log("Adding more" + j  + " click function");
+
+            //     $("#more" + j).click(function(e){
+            //         $(e.currentTarget.parentNode).after()
+            //     });
+            // };
+        }   
     }
 
     function jumpToShowEvent() {        
@@ -37,5 +56,24 @@ $(document).ready(function() {
         $(rowID).toggleClass("extra");
     }
 
+    //  load localStorage with events from array if there are none in localStorage
+    function loadLocalStorage(eventList) {
+        var data;
+        if (localStorage) {
+            if (localStorage.getItem("Flag") != "set") {
+                localStorage.setItem("Flag", "set");
+                for (var i = eventList.length - 1 ; i >= 0; i--) {
+                    data = "";
+                    for (var j = 0; j < 5; j++) {
+                        data = data + eventList[i][j] + "|";               
+                    }
+                    localStorage.setItem(i, data);
+                }
+            }
+        }
+    }
+    
+
+    loadLocalStorage(events);
     showEventList(events);
 });
