@@ -22,23 +22,29 @@ $(document).ready(function() {
                         "<li class=\"horizontal-list\">" + w[2] + "</li>" +
                         "<li class=\"horizontal-list\">" + w[3] + "</li>" +
                         "<li class=\"horizontal-list\"><button id=\"more" + i + "\">more</button></li>" +
-                        "</ul><div class= \"extraInfo\"><div id=\"extraInfo" + i + "\">" + w[4] + "</div></div>"
+                        "</ul><div class= \"extraInfo\"><div id=\"extraInfo" + i + "\">" + w[4] + "</div></div>";
 
-                    $(".event-list").html(listItem);   
-                    console.log("Adding more" + i  + " click function");             
-                    $("#more" + i).click(function(e){
-                        console.log("more");
-                    });
+                    $(".event-list").html(listItem);
+                    // console.log("Adding more" + i  + " click function");             
+                   
+                    // console.log( $("#more" + i));
+
+                    //  $("#more" + i).click(function(e){
+                    //     console.log("more");
+                    // });
+
+                    console.log("#more" + i);
                 i++;
-                data = localStorage.getItem(i.toString());           
-            }; 
-            // for (var j = 0; j < i; j++) {
-            //     console.log("Adding more" + j  + " click function");
+                data = localStorage.getItem(i.toString());
+            }
+            for (var j = 0; j < i; j++) {
+                console.log("Adding more" + j  + " click function");
 
-            //     $("#more" + j).click(function(e){
-            //         $(e.currentTarget.parentNode).after()
-            //     });
-            // };
+                $("#more" + j).click(function(e){
+                    console.log("more");
+                    // $(e.currentTarget.parentNode).after();
+                });
+            }
         }   
     }
 
