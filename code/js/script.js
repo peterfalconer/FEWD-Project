@@ -42,6 +42,9 @@ $(document).ready(function() {
         }
         while (data !== null) {
             listItems = addEventToList(data, i, listItems);
+            if (resultType === "search") {
+                localStorage.removeItem("search" + i);
+            }
             // console.log("Adding more" + i  + " click function");             
 
             // console.log( $("#more" + i));
@@ -53,7 +56,7 @@ $(document).ready(function() {
             console.log("#more" + i);
             i++;
             if (resultType === "search") {
-                data = localStorage.getItem("search" + i);
+                data = localStorage.getItem("search" + i);           
             } else {
                 data = localStorage.getItem(i.toString());
             }
