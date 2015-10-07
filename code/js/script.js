@@ -72,7 +72,7 @@ $(document).ready(function() {
         var w = data.split("|");
         listItems = listItems + "<ul class=\"event-detail\">" +
                 "<li class=\"horizontal-list\">" + w[0] + "</li>" +
-                "<li class=\"horizontal-list\"><a class=\"showEvent\" href=\"create.html\">" + w[1] + "</a></li>" +
+                "<li class=\"horizontal-list\"><a class=\"showEvent\" id=\"edit" + i + "\" href=\"create.html\">" + w[1] + "</a></li>" +
                 "<li class=\"horizontal-list\">" + w[2] + "</li>" +
                 "<li class=\"horizontal-list\">" + w[3] + "</li>" +
                 "<li class=\"horizontal-list\"><button id=\"more" + i + "\">more</button></li>" +
@@ -83,16 +83,21 @@ $(document).ready(function() {
 
     function addMoreClickHandler(NumEvents) {
         for (var j = 0; j < NumEvents; j++) {
-            console.log("Adding more" + j  + " click function");
 
             $("#more" + j).click(function(e){
-                console.log($(e.currentTarget.parentNode.parentNode.nextSibling));
                 $(e.currentTarget.parentNode.parentNode.nextSibling).toggleClass("extraInfo");
                 if (e.currentTarget.innerText === "more") {
                     $(e.currentTarget).html("less");
                 } else {
                     $(e.currentTarget).html("more");
                 }                
+            });
+
+            $("#edit" + j).click(function(e){
+                e.preventDefault();
+                console.log(e.currentTarget.id);
+                var value = e.currentTarget.id.toString().substring(4,4);
+                localStorage.setItem("edit", value);
             });
         }
     }
@@ -103,12 +108,6 @@ $(document).ready(function() {
         $(".edit").removeClass("hide");
         $(".edit").removeClass("show");
         return true;
-    }
-
-    function showExtraInfo (e) {
-        // var rowId;
-        // rowId = "#" + this.id;
-        // $(rowID).toggleClass("extra");
     }
 
     //  load localStorage with events from array if there are none in localStorage
