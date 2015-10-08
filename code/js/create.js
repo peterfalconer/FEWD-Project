@@ -4,20 +4,26 @@ $(document).ready(function() {
     $('#saveEvent').click(function(e) {
         var data;
         var i;
+        var eventToEdit = "";
         e.preventDefault();
         
         if (localStorage) {
             if (localStorage.getItem("Flag") != "set") {
                 localStorage.set("Flag", "set");
             }
-            i = GetMaxRowNum();
-            data = $("input[name=eventDate]").val() + "|" +
-                    $("input[name=eventName]").val() + "|" +
-                    $("input[name=eventLocation]").val() + "|" +
-                    $("input[name=eventOrganiser]").val() + "|" +
-                    $("input[name=eventDesc]").val() + "|";
-            localStorage.setItem(i, data);
-            window.location = "index.html";
+            eventToEdit = localStorage.getItem("edit");
+            if (eventToEdit === "" || eventToEdit === null) {
+                i = GetMaxRowNum();
+                data = $("input[name=eventDate]").val() + "|" +
+                        $("input[name=eventName]").val() + "|" +
+                        $("input[name=eventLocation]").val() + "|" +
+                        $("input[name=eventOrganiser]").val() + "|" +
+                        $("input[name=eventDesc]").val() + "|";
+                localStorage.setItem(i, data);
+                window.location = "index.html";
+            } else {
+                
+            }
         }
     });
 
@@ -32,8 +38,11 @@ $(document).ready(function() {
     }
 
     function showEditOrCreate() {
-        var eventToEdit = localStorage.getItem("edit");
-        localStorage.removeItem("edit");
+        var eventToEdit = "";
+        if (localStorage) {
+            eventToEdit = localStorage.getItem("edit");
+        }
+        // localStorage.removeItem("edit");
         if (eventToEdit !== "" && eventToEdit !== null) {
             $("h2").toggleClass("hide");
             var data = localStorage.getItem(eventToEdit);
