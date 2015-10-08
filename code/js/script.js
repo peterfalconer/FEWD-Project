@@ -96,8 +96,9 @@ $(document).ready(function() {
             $("#edit" + j).click(function(e){
                 e.preventDefault();
                 console.log(e.currentTarget.id);
-                var value = e.currentTarget.id.toString().substring(4,4);
+                var value = e.currentTarget.id.toString().substr(4,4);
                 localStorage.setItem("edit", value);
+                window.location = "create.html";
             });
         }
     }

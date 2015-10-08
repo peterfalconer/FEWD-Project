@@ -31,4 +31,22 @@ $(document).ready(function() {
         return i;
     }
 
+    function showEditOrCreate() {
+        var eventToEdit = localStorage.getItem("edit");
+        localStorage.removeItem("edit");
+        if (eventToEdit !== "" && eventToEdit !== null) {
+            $("h2").toggleClass("hide");
+            var data = localStorage.getItem(eventToEdit);
+            var w = data.split("|");
+            $("input[name=eventDate]").val(w[0]);
+            $("input[name=eventName]").val(w[1]);
+            $("input[name=eventLocation]").val(w[2]);
+            $("input[name=eventOrganiser]").val(w[3]);
+            $("input[name=eventDesc]").val(w[4]);
+        } else {
+
+        }
+    };
+
+    showEditOrCreate();
 });

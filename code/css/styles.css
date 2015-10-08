@@ -44,7 +44,7 @@ h2 {
 }
 
 .edit {
-    display: none;
+    display: block;
 }
 
 .show {
