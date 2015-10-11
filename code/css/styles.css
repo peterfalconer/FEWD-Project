@@ -62,10 +62,43 @@ ul {
 /*index page specific*/
 .horizontal-nav {
     color: blue;
-    display: inline-block;
-    width: 25%;
+    display: block;
+    width: 90%;
     list-style: none;
+    padding-bottom: 10px;
+}
 
+.horizontal-nav1 {
+    color: blue;
+    display: block;
+    width: 90%;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width: 643px) {
+    .horizontal-nav1 {
+        display: inline-block;
+        width: 24%;
+        padding-bottom: 0px;
+    }
+}
+
+.horizontal-nav-btn {
+    width: 90%;
+    font-size: 0.65rem;
+}
+
+@media screen and (min-width: 655px) {
+    .horizontal-nav-btn {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .horizontal-nav-btn {
+        font-size: .75rem;
+    }
 }
 
 .horizontal-list-hdr {

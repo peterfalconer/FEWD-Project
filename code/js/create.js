@@ -15,43 +15,48 @@ $(document).ready(function() {
             if (eventToEdit === "" || eventToEdit === null) {
                 i = GetMaxRowNum();
                 data = $("input[name=eventDate]").val() + "|" +
-                        $("input[name=eventName]").val() + "|" +
+                        $("input[name=eventTime]").val() + "|" +
+                        $("input[name=eventName]").val() + "|" +                        
                         $("input[name=eventLocation]").val() + "|" +
                         $("input[name=eventOrganiser]").val() + "|" +
+                        $("input[name=shortDescription]").val() + "|" +
                         $("input[name=eventDesc]").val() + "|";
                 localStorage.setItem(i, data);
+                
                 window.location = "index.html";
             } else {
-                
+                data = $("input[name=eventDate]").val() + "|" +
+                        $("input[name=eventName]").val() + "|" +
+                        $("input[name=eventTime]").val() + "|" +
+                        $("input[name=eventLocation]").val() + "|" +
+                        $("input[name=eventOrganiser]").val() + "|" +
+                        $("input[name=shortDescription]").val() + "|" +
+                        $("input[name=eventDesc]").val() + "|";
+                localStorage.removeItem(eventToEdit);
+                localStorage.setItem(eventToEdit, data);
+                localStorage.removeItem("edit");
+                window.location = "index.html";
             }
         }
     });
-
-    function GetMaxRowNum() {
-        var i = -1;
-        var data = "";
-        while (data !== null) {
-            i++;
-            data = localStorage.getItem(i.toString());
-        }
-        return i;
-    }
 
     function showEditOrCreate() {
         var eventToEdit = "";
         if (localStorage) {
             eventToEdit = localStorage.getItem("edit");
         }
-        // localStorage.removeItem("edit");
         if (eventToEdit !== "" && eventToEdit !== null) {
             $("h2").toggleClass("hide");
             var data = localStorage.getItem(eventToEdit);
+            localStorage.removeItem("edit");
             var w = data.split("|");
             $("input[name=eventDate]").val(w[0]);
-            $("input[name=eventName]").val(w[1]);
-            $("input[name=eventLocation]").val(w[2]);
-            $("input[name=eventOrganiser]").val(w[3]);
-            $("input[name=eventDesc]").val(w[4]);
+            $("input[name=eventTime]").val(w[1]);
+            $("input[name=eventName]").val(w[2]);
+            $("input[name=eventLocation]").val(w[3]);
+            $("input[name=eventOrganiser]").val(w[4]);
+            $("input[name=shortDescription]").val(w[5]);
+            $("input[name=eventDesc]").val(w[6]);
         } else {
 
         }

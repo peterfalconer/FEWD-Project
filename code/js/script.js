@@ -1,12 +1,12 @@
 $(document).ready(function() {
-    var events = [["30 Sept 2015","Rally","Melbourne Fed Square","ACF", "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu.</p>"],
-                    ["3 Oct 2015","Protest Dinner","The Press Club","Joe Anderson", "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu.</p>"],
-                    ["20 Oct 2015","Rally","Melbourne Fed Square","ACF", "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu.</p>"],
-                    ["30 Oct 2015","Poetry Reading","Cafe Climate","Hilary Bentley", "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu.</p>"],
-                    ["23 Nov 2015","Public Meeting","Melbourne Town Hall","ACF", "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu.</p>"]]
+    var events = [["2015/12/30","12:00", "Rally","Melbourne Fed Square","ACF", "","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu."],
+                    ["2015/10/03","19:00", "Protest Dinner","The Press Club","Joe Anderson", "", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu."],
+                    ["2015/10/20","17:00", "Rally","Melbourne Fed Square","ACF", "","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu."],
+                    ["2015/10/30","19:30", "Poetry Reading","Cafe Climate","Hilary Bentley", "", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu."],
+                    ["2015/11/23","13:00", "Public Meeting","Melbourne Town Hall","ACF", "", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu."]]
 
     $(".showEvent").click(function(e) {
-        e.preventDefault();
+        e.preventDefault(); 
 
         window.location = "create.html";
     });
@@ -20,7 +20,6 @@ $(document).ready(function() {
         var NumEvents = 0;
         var data;
 
-        // jumpToShowEvent.bind(this, arg1, arg2, arg3);
         if (localStorage) {
             if (localStorage.getItem("search0")) {
                 NumEvents = showResults("search");
@@ -29,7 +28,8 @@ $(document).ready(function() {
                 NumEvents = showResults("all");
                 
             }
-            addMoreClickHandler(NumEvents);                    
+            addMoreClickHandler(NumEvents);  
+            addEventHoverHandler();
         }   
     }
 
@@ -48,15 +48,6 @@ $(document).ready(function() {
             if (resultType === "search") {
                 localStorage.removeItem("search" + i);
             }
-            // console.log("Adding more" + i  + " click function");             
-
-            // console.log( $("#more" + i));
-
-            //  $("#more" + i).click(function(e){
-            //     console.log("more");
-            // });
-
-            console.log("#more" + i);
             i++;
             if (resultType === "search") {
                 data = localStorage.getItem("search" + i);           
@@ -71,36 +62,45 @@ $(document).ready(function() {
     function addEventToList(data, i, listItems) {
         var w = data.split("|");
         listItems = listItems + "<ul class=\"event-detail\">" +
-                "<li class=\"horizontal-list\">" + w[0] + "</li>" +
-                "<li class=\"horizontal-list\"><a class=\"showEvent\" id=\"edit" + i + "\" href=\"create.html\">" + w[1] + "</a></li>" +
-                "<li class=\"horizontal-list\">" + w[2] + "</li>" +
+                "<li class=\"horizontal-list\">" + w[0] + "</li>" +  
+                "<li class=\"horizontal-list\"><a class=\"edit\" id=\"edit" + i + "\" href=\"create.html\">" + w[2] + "</a></li>" +
                 "<li class=\"horizontal-list\">" + w[3] + "</li>" +
-                "<li class=\"horizontal-list\"><button id=\"more" + i + "\">more</button></li>" +
-                "</ul><div class= \"extraInfo\"><div id=\"extraInfo" + i + "\">" + w[4] + "</div></div>";
+                "<li class=\"horizontal-list\">" + w[4] + "</li>" +
+                "<li class=\"horizontal-list\"><button class=\"more\" id=\"more" + i + "\">more</button></li>" +
+                // "<li class=\"horizontal-list\"><button id=\"more" + i + "\">more</button></li>" +
+                "</ul><div class= \"extraInfo\"><div id=\"extraInfo" + i + "\">" + w[6] + "</div></div>";
 
          return listItems;
     }
 
     function addMoreClickHandler(NumEvents) {
-        for (var j = 0; j < NumEvents; j++) {
+        // for (var j = 0; j < NumEvents; j++) {
 
-            $("#more" + j).click(function(e){
-                $(e.currentTarget.parentNode.parentNode.nextSibling).toggleClass("extraInfo");
-                if (e.currentTarget.innerText === "more") {
-                    $(e.currentTarget).html("less");
-                } else {
-                    $(e.currentTarget).html("more");
-                }                
+            $(".more").click(function(e){
+                e.preventDefault();
+                console.log(e.currentTarget.parentNode.parentNode.lastChild.nextSibling);
+                $(e.currentTarget.parentNode.parentNode.lastChild.nextSibling).toggleClass("extraInfo");
+                // if (e.currentTarget.innerText === "more") {
+                //     $(e.currentTarget).html("less");
+                // } else {
+                //     $(e.currentTarget).html("more");
+                // }                
             });
 
-            $("#edit" + j).click(function(e){
+            $(".edit").click(function(e){
                 e.preventDefault();
                 console.log(e.currentTarget.id);
                 var value = e.currentTarget.id.toString().substr(4,4);
                 localStorage.setItem("edit", value);
                 window.location = "create.html";
-            });
-        }
+            });            
+        // }
+    }
+
+    function addEventHoverHandler() {
+        $(".showEvent").on("hover", function(){
+
+        });
     }
 
     function jumpToShowEvent() {        
@@ -119,7 +119,7 @@ $(document).ready(function() {
                 localStorage.setItem("Flag", "set");
                 for (var i = eventList.length - 1 ; i >= 0; i--) {
                     data = "";
-                    for (var j = 0; j < 5; j++) {
+                    for (var j = 0; j < 7; j++) {
                         data = data + eventList[i][j] + "|";               
                     }
                     localStorage.setItem(i, data);
@@ -128,7 +128,6 @@ $(document).ready(function() {
         }
     }
     
-
     loadLocalStorage(events);
     showEventList(events);
 });
