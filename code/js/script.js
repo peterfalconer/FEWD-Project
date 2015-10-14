@@ -1,9 +1,9 @@
 $(document).ready(function() {
-    var events = [["2015/12/30","12:00", "Rally","Melbourne Fed Square","ACF", "","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu."],
-                    ["2015/10/03","19:00", "Protest Dinner","The Press Club","Joe Anderson", "", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu."],
-                    ["2015/10/20","17:00", "Rally","Melbourne Fed Square","ACF", "","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu."],
-                    ["2015/10/30","19:30", "Poetry Reading","Cafe Climate","Hilary Bentley", "", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu."],
-                    ["2015/11/23","13:00", "Public Meeting","Melbourne Town Hall","ACF", "", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu."]]
+    var events = [["2015-12-30","12:00", "Rally","Melbourne Fed Square","ACF", "","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu.","0","peter@gmail.com"],
+                    ["2015-10-03","19:00", "Protest Dinner","The Press Club","Joe Anderson", "", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu.","0", "emma@me.com"],
+                    ["2015-10-20","17:00", "Rally","Melbourne Fed Square","ACF", "","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu.","7","peter@gmail.com"],
+                    ["2015-10-30","19:30", "Poetry Reading","Cafe Climate","Hilary Bentley", "", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu.","23","emma@me.com"],
+                    ["2015-11-23","13:00", "Public Meeting","Melbourne Town Hall","ACF", "", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. <b>Lorem</b> Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum <b>Sed</b> imperdiet. Duis sagittis ipsum. <b>Nulla</b> Praesent mauris. Fusce <b>sem</b> nec tellus <b>sagittis</b> sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti <b>lacinia</b> sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in <b>conubia</b> libero. Sed dignissim <b>nostra,</b> lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem <b>lacinia</b> at dolor. Maecenas <b>Pellentesque</b> mattis. Sed convallis tristique <i>libero.</i> sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis <b>vel</b> vel, suscipit quis, <b>egestas</b> luctu.","13","harry@acf.com.au"]]
 
     $(".showEvent").click(function(e) {
         e.preventDefault(); 
@@ -28,8 +28,7 @@ $(document).ready(function() {
                 NumEvents = showResults("all");
                 
             }
-            addMoreClickHandler(NumEvents);  
-            addEventHoverHandler();
+            addMoreClickHandler();
         }   
     }
 
@@ -59,56 +58,32 @@ $(document).ready(function() {
         return i;
     }
 
-    function addEventToList(data, i, listItems) {
-        var w = data.split("|");
-        listItems = listItems + "<ul class=\"event-detail\">" +
-                "<li class=\"horizontal-list\">" + w[0] + "</li>" +  
-                "<li class=\"horizontal-list\"><a class=\"edit\" id=\"edit" + i + "\" href=\"create.html\">" + w[2] + "</a></li>" +
-                "<li class=\"horizontal-list\">" + w[3] + "</li>" +
-                "<li class=\"horizontal-list\">" + w[4] + "</li>" +
-                "<li class=\"horizontal-list\"><button class=\"more\" id=\"more" + i + "\">more</button></li>" +
-                // "<li class=\"horizontal-list\"><button id=\"more" + i + "\">more</button></li>" +
-                "</ul><div class= \"extraInfo\"><div id=\"extraInfo" + i + "\">" + w[6] + "</div></div>";
-
-         return listItems;
-    }
-
-    function addMoreClickHandler(NumEvents) {
-        // for (var j = 0; j < NumEvents; j++) {
-
-            $(".more").click(function(e){
-                e.preventDefault();
-                console.log(e.currentTarget.parentNode.parentNode.lastChild.nextSibling);
-                $(e.currentTarget.parentNode.parentNode.lastChild.nextSibling).toggleClass("extraInfo");
-                // if (e.currentTarget.innerText === "more") {
-                //     $(e.currentTarget).html("less");
-                // } else {
-                //     $(e.currentTarget).html("more");
-                // }                
-            });
-
-            $(".edit").click(function(e){
-                e.preventDefault();
-                console.log(e.currentTarget.id);
-                var value = e.currentTarget.id.toString().substr(4,4);
-                localStorage.setItem("edit", value);
-                window.location = "create.html";
-            });            
-        // }
-    }
-
-    function addEventHoverHandler() {
-        $(".showEvent").on("hover", function(){
-
+    function addMoreClickHandler() {
+        $(".more").click(function(e){
+            e.preventDefault();
+            $(e.currentTarget.parentNode.parentNode.nextSibling).toggleClass("extraInfo");
+            if (e.currentTarget.innerText === "more") {
+                $(e.currentTarget).html("less");
+            } else {
+                $(e.currentTarget).html("more");
+            };              
         });
-    }
 
-    function jumpToShowEvent() {        
-        $(".create").removeClass("show");
-        $(".create").addClass("hide");
-        $(".edit").removeClass("hide");
-        $(".edit").removeClass("show");
-        return true;
+        $(".rsvp").click(function(e){
+            e.preventDefault();
+            console.log(e.currentTarget.id);
+            var value = e.currentTarget.id.toString().substr(4,4);
+            localStorage.setItem("rsvp", value);
+            window.location = "rsvp.html";
+        });
+
+        $(".edit").click(function(e){
+            e.preventDefault();
+            console.log(e.currentTarget.id);
+            var value = e.currentTarget.id.toString().substr(4,4);
+            localStorage.setItem("edit", value);
+            window.location = "create.html";
+        });            
     }
 
     //  load localStorage with events from array if there are none in localStorage
@@ -119,7 +94,7 @@ $(document).ready(function() {
                 localStorage.setItem("Flag", "set");
                 for (var i = eventList.length - 1 ; i >= 0; i--) {
                     data = "";
-                    for (var j = 0; j < 7; j++) {
+                    for (var j = 0; j < 9; j++) {
                         data = data + eventList[i][j] + "|";               
                     }
                     localStorage.setItem(i, data);

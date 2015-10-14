@@ -34,25 +34,11 @@ h2 {
     header h1 {
         font-size: 1.25rem;
     }
-    legend {
+    legend {`
         font-size: 1rem
     }
 }
 
-.create {
-    display: block;
-}
-
-.edit {
-    display: block;
-}
-
-.show {
-    display: block;
-}
-.hide {
-    display: none;
-}
 
 ul {
     padding-left: 10%;
@@ -68,6 +54,14 @@ ul {
     padding-bottom: 10px;
 }
 
+@media screen and (min-width: 643px) {
+    .horizontal-nav {
+        display: inline-block;
+        width: 24%;
+        padding-bottom: 0;
+    }
+}
+
 .horizontal-nav1 {
     color: blue;
     display: block;
@@ -80,7 +74,7 @@ ul {
     .horizontal-nav1 {
         display: inline-block;
         width: 24%;
-        padding-bottom: 0px;
+        padding-bottom: 0;
     }
 }
 
@@ -105,18 +99,63 @@ ul {
     color: white;
     background-color: #002030;
     display: inline-block;
-    width: 19%;
+    width: 15%;
     list-style: none;
 }
 
+.advice {
+    text-align: center;
+    margin-left: .35%;
+    padding-left: 4.5%;
+    padding-right: 4.5%;
+    border: solid;
+    border-width: 1px;
+    width: 90%;
+}
 .horizontal-list {
     color: blue;
     display: inline-block;
-    width: 19%;
+    width: 15%;
     list-style: none;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     padding-bottom: 2px;
+}
+
+.who {
+    display: none;
+}
+
+@media screen and (min-width: 490px) {
+    .who {
+        display: inline-block;
+    }
+}
+
+.num-rsvps {
+    display: none;
+}
+
+.horizontal-list-btn {
+    color: blue;
+    display: inline-block;
+    width: 8%;
+    list-style: none;
+    padding-bottom: 2px;
+}
+
+.more {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .more {
+        display: inline-block;
+    }
+
+    .num-rsvps {
+        display: inline-block;
+    }
 }
 
 .event-detail {
@@ -124,7 +163,7 @@ ul {
     margin-top: 0;
 }
 
-input {
+input 
     border-radius: 2px;
     width: 40%;
 }
@@ -132,6 +171,16 @@ input {
 .styleform input[type="submit"] {
     margin-left: 15%;
     margin-top: 4px;
+}
+
+input[type="textarea"] {
+    overflow: auto;
+    margin: 0 auto;
+    height: 100px;
+    vertical-align: top;
+    width: 75%;
+    display: block;
+    left: 0;
 }
 
 footer {
@@ -186,3 +235,26 @@ footer p {
     }
 }
 
+.create {
+    display: block;
+}
+
+.edit {
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.error-border {
+    border-color: red;
+}
+
+.red-text {
+    color: red;
+}

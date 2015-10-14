@@ -10,17 +10,33 @@
         <header>
             <h1>Australian Conservation Foundation</h1>            
         </header>  
-        <legend>Administration</legend>  
+        <h2>Administration</h2>  
+        <div class="advice auth-info">
+            <span>You must sign in to create or edit events.</span>
+        </div>
         <div>
             <ul>
-                <li class="horizontal-nav1"><button class="horizontal-nav-btn"><a href="auth.html">Sign-in</a></button></li>
-                <li class="horizontal-nav1"><button class="horizontal-nav-btn"><a href="auth.html">Create account</a></button></li>
-                <li class="horizontal-nav"><button class="horizontal-nav-btn"><a href="create.html">Create an event</a></button></li>
-                <li class="horizontal-nav"><button class="horizontal-nav-btn"><a href="create.html">Edit an event</a></button></li>                
+                <li class="horizontal-nav1 auth-info"><button class="horizontal-nav-btn"><a href="auth.html">Sign-in</a></button></li>
+                <li class="horizontal-nav1 auth-info"><button class="horizontal-nav-btn"><a href="auth.html">Create account</a></button></li>
+                <li class="horizontal-nav event-btn"><button class="horizontal-nav-btn" id="create-event"><a href="create.html">Create an event</a></button></li>             
             </ul>
+        </div>
+        <div>
+            <ul class="event-header">
+                <li class="horizontal-list-hdr">When</li>
+                <li class="horizontal-list-hdr">What</li>
+                <li class="horizontal-list-hdr">Where</li>
+                <li class="horizontal-list-hdr who">Who</li>
+            </ul>
+            <div class="event-list">
+                
+            </div>   
         </div>
         <footer>
             <button><a href="index.html">Back</a></button>
         </footer>    
+        <script src="js/jquery-2.1.4.min.js"></script> 
+        <script type="text/javascript" src="js/utility.js"></script>
+        <script type="text/javascript" src="js/admin.js"></script>
     </body>
 </html>

@@ -12,15 +12,19 @@
         </header>  
         <h2>Sign-in to create or edit events</h2> 
         <div>
+            <span class="advice hide">Please enter both email and password to continue.</span>
             <form>
                 <ul>
                     <li><label for="userEmail">Email</label><input type ="email" name="userEmail"></input></li>
                     <li><label for="password">Password</label><input type ="password" name="password"></input></li>
+                    <li><input type ="submit" id="sign-in"></input></li>
                 </ul>   
             </form>
         </div>
         <footer>
             <button><a href="index.html">Back</a></button>
         </footer>    
+        <script src="js/jquery-2.1.4.min.js"></script> 
+        <script type="text/javascript" src="js/auth.js"></script>
     </body>
 </html>
