@@ -43,7 +43,7 @@ $(document).ready(function() {
             data = localStorage.getItem(i.toString());
         }
         while (data !== null) {
-            listItems = addEventToList(data, i, listItems);
+            listItems = addEventToList(data, i, listItems, true);
             if (resultType === "search") {
                 localStorage.removeItem("search" + i);
             }
@@ -61,12 +61,12 @@ $(document).ready(function() {
     function addMoreClickHandler() {
         $(".more").click(function(e){
             e.preventDefault();
-            $(e.currentTarget.parentNode.parentNode.nextSibling).toggleClass("extraInfo");
+            $(e.currentTarget.parentNode.parentNode.nextSibling).toggleClass("hide");
             if (e.currentTarget.innerText === "more") {
                 $(e.currentTarget).html("less");
             } else {
                 $(e.currentTarget).html("more");
-            };              
+            }             
         });
 
         $(".rsvp").click(function(e){
@@ -77,13 +77,7 @@ $(document).ready(function() {
             window.location = "rsvp.html";
         });
 
-        $(".edit").click(function(e){
-            e.preventDefault();
-            console.log(e.currentTarget.id);
-            var value = e.currentTarget.id.toString().substr(4,4);
-            localStorage.setItem("edit", value);
-            window.location = "create.html";
-        });            
+            
     }
 
     //  load localStorage with events from array if there are none in localStorage

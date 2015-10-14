@@ -11,7 +11,7 @@ body {
 header {
     color: white;
     background-color: black;
-    height: 400px;
+    height: 300px;
     background: url(../images/ACF_hdr.jpg) center center no-repeat;
     background-size: cover;
 }
@@ -30,22 +30,29 @@ header h1 {
 h2 {
     text-align: center;
 }
+
 @media screen and (max-width: 500px) {
     header h1 {
         font-size: 1.25rem;
     }
-    legend {`
-        font-size: 1rem
-    }
 }
-
 
 ul {
     padding-left: 10%;
     padding-right: 10%;
 }
 
-/*index page specific*/
+#eventInfo p {
+    margin-left: 10%;
+    margin-right: 10%;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
 .horizontal-nav {
     color: blue;
     display: block;
@@ -54,15 +61,25 @@ ul {
     padding-bottom: 10px;
 }
 
-@media screen and (min-width: 643px) {
+.horizontal-nav button {
+    color: blue;
+    display: block;
+    width: 90%;
+}
+
+.horizontal-nav button a {
+    width: 90%;
+}
+
+@media screen and (min-width: 340px) {
     .horizontal-nav {
         display: inline-block;
-        width: 24%;
+        width: 30%;
         padding-bottom: 0;
     }
 }
 
-.horizontal-nav1 {
+/*.horizontal-nav1 {
     color: blue;
     display: block;
     width: 90%;
@@ -77,7 +94,7 @@ ul {
         padding-bottom: 0;
     }
 }
-
+*/
 .horizontal-nav-btn {
     width: 90%;
     font-size: 0.65rem;
@@ -99,23 +116,14 @@ ul {
     color: white;
     background-color: #002030;
     display: inline-block;
-    width: 15%;
+    width: 40%;
     list-style: none;
 }
 
-.advice {
-    text-align: center;
-    margin-left: .35%;
-    padding-left: 4.5%;
-    padding-right: 4.5%;
-    border: solid;
-    border-width: 1px;
-    width: 90%;
-}
 .horizontal-list {
     color: blue;
     display: inline-block;
-    width: 15%;
+    width: 40%;
     list-style: none;
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -124,6 +132,33 @@ ul {
 
 .who {
     display: none;
+}
+
+.where {
+    display: none;
+}
+
+@media screen and (min-width: 300px) {
+    .horizontal-list {
+        width:30%;
+    }
+    .horizontal-list-hdr {
+        width:30%;
+    }
+}
+
+
+@media screen and (min-width: 400px) {
+    .where {
+        display: inline-block;
+    }
+
+    .horizontal-list {
+        width:20%;
+    }
+    .horizontal-list-hdr {
+        width:20%;
+    }
 }
 
 @media screen and (min-width: 490px) {
@@ -156,6 +191,14 @@ ul {
     .num-rsvps {
         display: inline-block;
     }
+
+    .horizontal-list  {
+        width: 15%;
+    }
+
+    .horizontal-list-hdr {
+        width: 15%;
+    }
 }
 
 .event-detail {
@@ -163,9 +206,16 @@ ul {
     margin-top: 0;
 }
 
-input 
+input[type="text"] { 
     border-radius: 2px;
     width: 40%;
+    margin-bottom: 3px;
+}
+
+input[type="submit"] {
+    margin-left: 15%;
+    margin-top: 4px;
+    width: 80%;
 }
 
 .styleform input[type="submit"] {
@@ -177,7 +227,6 @@ input[type="textarea"] {
     overflow: auto;
     margin: 0 auto;
     height: 100px;
-    vertical-align: top;
     width: 75%;
     display: block;
     left: 0;
@@ -189,10 +238,6 @@ footer {
     color: #fff;
     font-size: .5rem;
     position: relative;
-}
-
-footer p {
-    position: center;
 }
 
 .eventInfo {
@@ -211,7 +256,12 @@ footer p {
 }
 
 .extraInfo {
-    display: none;
+    display: block;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
 }
 
 @media screen and (min-width: 550px) {
@@ -257,4 +307,20 @@ footer p {
 
 .red-text {
     color: red;
+}
+
+.advice {
+    text-align: center;
+    margin-left: .35%;
+    padding-left: 4.5%;
+    padding-right: 4.5%;
+    border: solid;
+    border-width: 1px;
+    width: 90%;
+}
+
+#doSearch {
+    width: 80%;
+    height: 30x;
+    font-size: 1.2rem;
 }

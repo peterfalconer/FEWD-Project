@@ -3,8 +3,10 @@ $(document).ready(function() {
 //Otherwise just show the create and edit buttons
 //User is signed in if localStorage has a userid item with username value.
 //
-   var userID = "";
-   var isSignedIn = false
+    var userID = "";
+    var isSignedIn = false;
+
+
 
     function checkUserSignedIn() {
         userID = sessionStorage.getItem("userEmail");
@@ -40,6 +42,15 @@ $(document).ready(function() {
                 i++;
                 data = localStorage.getItem(i.toString());
             }
+
+            //and wire up a click function on the edit button
+            $(".edit").click(function(e){
+                e.preventDefault();
+                console.log(e.currentTarget.id);
+                var value = e.currentTarget.id.toString().substr(4,4);
+                localStorage.setItem("edit", value);
+                window.location = "create.html";
+            });
         }
     }
 

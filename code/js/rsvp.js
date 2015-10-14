@@ -14,13 +14,18 @@ $(document).ready(function() {
             }
             eventToEdit = localStorage.getItem("rsvp");
             if (eventToEdit !== "" && eventToEdit !== null) {
-                data = $("input[name=eventDate]").val() + "|" +
-                        $("input[name=eventTime]").val() + "|" +
-                        $("input[name=eventName]").val() + "|" +
-                        $("input[name=eventLocation]").val() + "|" +
-                        $("input[name=eventOrganiser]").val() + "|" +
-                        $("input[name=shortDescription]").val() + "|" +
-                        $("input[name=eventDesc]").val() + "|" + ++NumRegistered + "|";
+                ++NumRegistered;
+                data = localStorage.getItem(eventToEdit);
+                var w = data.split("|");
+                data = w[0] + "|" +
+                        w[1] + "|" +
+                        w[2] + "|" +
+                        w[3] + "|" +
+                        w[4] + "|" +
+                        w[5] + "|" +
+                        w[6] + "|" +
+                        NumRegistered + "|" +
+                        w[8] + "|";
                 localStorage.removeItem(eventToEdit);
                 localStorage.setItem(eventToEdit, data);
                 localStorage.removeItem("rsvp");
@@ -37,16 +42,14 @@ $(document).ready(function() {
         if (eventToEdit !== "" && eventToEdit !== null) {
             var data = localStorage.getItem(eventToEdit);
             var w = data.split("|");
-            $("input[name=eventDate]").val(w[0]);
-            $("input[name=eventTime]").val(w[1]);
-            $("input[name=eventName]").val(w[2]);
-            $("input[name=eventLocation]").val(w[3]);
-            $("input[name=eventOrganiser]").val(w[4]);
-            $("input[name=shortDescription]").val(w[5]);
-            $("input[name=eventDesc]").val(w[6]);
+            var s = "<p>What: " + w[2] + " at " + w[3] + "<br/>" +
+                        "When: " + w[1] + " on " + w[0] + "<br/>" +
+                        "Organised by " + w[4] + "<br/>" +
+                        w[5] + "<br/><br/>" + w[6] + "</p>";
+            $("#eventInfo").html(s);
             NumRegistered = w[7];
         }
-    };
+    }
 
     showRsvpEvent();
 });
